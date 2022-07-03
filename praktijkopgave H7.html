@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Inschrijfformulier</title>
+</head>
+
+<body>
+  <H1>inschrijven</H1>
+  <form>
+    <fieldset>
+      <legend><b>persoonlijke gegevens</b></legend>
+      <label for="naam">naam</label>
+      <input id="naam" type="text" name="naam"><br><br>
+      <input type="radio" name="geslacht" value="man" checked>man
+      <input type="radio" name="geslacht" value="vrouw">vrouw
+      <input type="radio" name="geslacht" value="anders">Anders
+      <label for="adres">adres</label>
+      <input type="text" id="adres" name="adres"><br><br>
+      <label for="postcode">postcode</label>
+      <input type="text" id="postcode" name="postcode"><br><br>
+      <label for="woonplaats">woonplaats</label>
+      <input type="text" id="woonplaats" name="woonplaats"><br><br>
+      <label for="profiel">selecteer een profiel</label>
+      <input type="file" id="profielfoto" name="profielfoto"><br><br>
+    </fieldset>
+    <fieldset>
+      <legend><b>Inschrijvings informatie</b></legend><br>
+      <b> selecteer een cursus</b><br>
+      <input type="checkbox" name="onderwerpen" value="ja">webdesign
+      <input type="checkbox" name="onderwerpen" value="ja">javascript
+      <input type="checkbox" name="onderwerpen" value="ja">phyton<br>
+      <b> selecteer uw hoogst genoten opleiding</b><br>
+      <select name="opleiding">
+        <option value="geen">geen</option>
+        <option value="middelbaar onderwijs" selected>middelbaar onderwijs</option>
+        <option value="hbo">hoger beroepsonderwijs</option>
+        <option value="Wo">wetenschappelijk onderwijs</option>
+      </select><br><br>
+      <b>selecteer uw gewenste startdatum<br>
+        <input type="date" name="datum" max="2080-12-31"><br><br>
+    </fieldset><br>
+    <input type="submit" value="verzend"">
+  </form>
+  </body>
+  </html>
