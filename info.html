@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>huiswerk H9 index</title>
+</head>
+
+<body>
+  <section class="informatie">
+    <article>
+      <header>
+        <input type="search" name="zoek" placeholder="Typ hier uw zoekopdracht">
+        <!--table width="600" border="0"-->
+          <H2>Routebeschrijving</H2>
+          <a href="https://www.4daagse.nl/en/routes" target="_new">routes van dag tot dag</a>
+          <H2>Openingstijden</H2>
+          <table>
+            <tr>
+              <td>dinsdag t/m vrijdag</td>
+              <td>6.00-18.00</td>
+            </tr>
+          </table>
+          <H2>Entreeprijzen</H2>
+          <table>
+            <tr>
+              <td>t/m/ 16 jaar:</td>
+              <td>7,50 euro</td>
+            </tr>
+            <tr>
+              <td>16 t/m 50:</td>
+              <td>15 euro</td>
+            </tr>
+            <tr>
+              <td>vanaf 50+:</td>
+              <td>15 euro</td>
+            </tr>
+          </table>
+          <tbody><br>
+            <H2>Aanmelding</H2>
+            <fieldset>
+              <legend>Persoonlijke gegevens</legend>
+              <table>
+                <tr>
+                  <td width="200"><b><label for="adres">Uw adres<label></b></td>
+                  <td width="400"><input type="text" name="adres" id="adres" placeholder="Straatnaam en huisnummer"></td>
+                </tr>
+                <tr>
+                  <td><b>Uw leeftijd</b></td>
+                  <td>
+                    <form method="post" action="bewaarInformatie.php"><input type="number" name="leeftijd" min="1" max="100"></form>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Uw e-mailadres</b></td>
+                  <td>
+                    <form method="post" action="bewaarInformatie.php"><input type="email" name="emailadres"></form>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Uw telefoonnummer</b></td>
+                  <td>
+                    <form method="post" action="bewaarInformatie.php"><input type="tel" name="telefoonnummer"></form>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Uw geboortedatum</b>
+                  </td>
+                  <td>
+                    <form method="post" action="bewaarInformatie.php"><input type="date" name="datum" max="2080-12-31"></form>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Uw geslacht</b></td>
+                  <td>
+                    <form method="post" action="bewaarInformatie.php">
+                      <input type="radio" name="geslacht" value="man" checked>Man
+                      <input type="radio" name="geslacht" value="vrouw">Vrouw
+                      <input type="radio" name="geslacht" value="anders">Anders
+                    </form>
+                  </td>
+              </table>
+
+            </fieldset>
+            <table>
+              <tr>
+              <tr><br>
+                <td><b> Selecteer in welke hoedanigheid je meedoet </b></td>
+                <td>
+                  <form method="post" action="bewaarInformatie.php">
+                    <input type="checkbox" name="onderwerpen" value="ja">individueel
+                    <input type="checkbox" name="onderwerpen" value="ja">groep recreatief
+                    <input type="checkbox" name="onderwerpen" value="ja">militair
+                    <input type="checkbox" name="onderwerpen" value="ja">bedrijf
+                    <input type="checkbox" name="onderwerpen" value="ja">anders
+                </form></td>
+
+              <tr>
+                <td><b>Selecteer uw land</b></td>
+                <td><select name="land" multiple>
+                    <option value="nl">Nederland</option>
+                    <option value="be" selected>België</option>
+                    <option value="de">Duitsland</option>
+                    <option value="fr">Frankrijk</option>
+                  </select></td>
+              </tr>
+            </table><br>
+          </tbody>
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LeYKmLpuqZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe><br>
+          </div>
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rsE9C1JoO7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          </tbody>
+      </header>
+    </article>
+    <nav>
+      <ul>
+        <li><a href="nijmeegse_vierdaagse_2022.html">nijmeegse vierdaagse 2022</a></li>
+      </ul>
+    </nav>
+  </section>
+</body>
+
+</html>
